@@ -172,6 +172,19 @@ section {
     position: relative;
 }
 
+.aboutme_section {
+    margin-left: 20px;    
+}
+
+.aboutme_section li {
+    padding-left: 5px;
+    margin-left: 30px;
+}
+.aboutme_section span {
+    font-weight: bold;
+}
+
+
 .lang-content {
     display: none;
 }
