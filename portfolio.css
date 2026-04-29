@@ -119,11 +119,11 @@ h1 {
     font-size: 3em;
     margin-bottom: 7px;
     font-weight: 700;
-    text-shadow: 
+    /*text-shadow: 
         0 0 10px #00ffff,
         0 0 20px #00ffff,
         0 0 30px #ff0080,
-        2px 2px 0px rgba(255, 0, 128, 0.5);
+        2px 2px 0px rgba(255, 0, 128, 0.5);*/
     letter-spacing: 3px;
 }
 
