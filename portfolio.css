@@ -51,13 +51,13 @@ body::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, 
+    /*background: linear-gradient(90deg, 
         #ff0080 0%, 
         #ff0080 20%, 
         #ff8c00 40%, 
         #00ffff 60%, 
         #8000ff 80%, 
-        #ff0080 100%);
+        #ff0080 100%);*/
 }
 
 .language-selector {
@@ -101,7 +101,7 @@ header {
     position: relative;
     border-bottom: 2px solid rgba(0, 255, 255, 0.5);
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
 header::after {
@@ -117,7 +117,7 @@ header::after {
 
 h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-weight: 700;
     text-shadow: 
         0 0 10px #00ffff,
@@ -136,7 +136,7 @@ h1 {
 }
 
 .contact-info {
-    margin-top: 60px;
+    margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -163,8 +163,23 @@ h1 {
     text-shadow: 0 0 10px #00ffff, 0 0 15px #ff0080;
 }
 
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.7));
+}
+
 .content {
-    padding: 60px 40px;
+    padding: 30px 40px;
+    padding-bottom: 20px;
 }
 
 section {
@@ -207,6 +222,7 @@ h2 {
 h2::before {
     content: '> ';
     color: #ff0080;
+    margin-right: 50px;
 }
 
 h2::after {
@@ -342,7 +358,7 @@ footer {
     background: rgba(10, 10, 20, 0.9);
     color: #00ffff;
     text-align: center;
-    padding: 40px;
+    padding: 15px;
     font-size: 0.95em;
     border-top: 2px solid rgba(255, 0, 128, 0.5);
     position: relative;
@@ -629,7 +645,7 @@ footer::before {
 }
 
 .tree-view {
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 .tree-item {
@@ -708,8 +724,8 @@ footer::before {
 .glitch-text {
     position: relative;
     color: #fff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5);
-    animation: text-flicker 0.1s infinite alternate;
+    /*text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: text-flicker 0.1s infinite alternate;*/
 }
 
 .glitch-text::before,
@@ -772,4 +788,31 @@ footer::before {
     75% { clip: rect(32px, 9999px, 8px, 0); }
     90% { clip: rect(64px, 9999px, 15px, 0); }
     100% { clip: rect(11px, 9999px, 87px, 0); }
+}
+/*
+-- Collapsible CV sections --
+   Uses the existing h2::before ">" marker. No extra buttons are added.
+*/
+section.collapsible-section > h2 {
+    cursor: pointer;
+    user-select: none;
+}
+
+section.collapsible-section > h2::before {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.2s ease;
+}
+
+section.collapsible-section.collapsed > h2::before {
+    transform: rotate(0deg);
+}
+
+section.collapsible-section.collapsed > :not(h2) {
+    display: none !important;
+}
+
+section.collapsible-section.collapsed {
+    margin-bottom: 30px;
 }

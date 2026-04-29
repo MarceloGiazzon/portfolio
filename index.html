@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcelo Giazzon - Genexus Developer</title>
+    <title>Marcelo Giazzon - GeneXus Developer</title>
     <link rel="stylesheet" href="portfolio.css">
     <script src="portfolio.min.js"></script>
-    <meta name="facebook-domain-verification" content="8mmu4p8c3aucch4xvrybhgztekusan"/>
 </head>
 <body>
     <!-- Mobile Simulation Toggle -->
@@ -29,25 +28,15 @@
                 <!--<a href="https://marcelogiazzon.github.io/host01/portfolio" target="_blank" rel="noopener noreferrer">
                     https://marcelogiazzon.github.io/host01/portfolio</a>-->
                 <a href="mailto:marcelo.giazzon@gmail.com">marcelo.giazzon@gmail.com</a>
-                <a href="https://wa.me/555496581012" target="_blank" rel="noopener noreferrer">+55 54 96581012</a>
+                <a href="https://wa.me/555496581012" target="_blank" rel="noopener noreferrer" class="whatsapp-link" aria-label="WhatsApp" title="WhatsApp">
+                    <svg class="whatsapp-icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false">
+                        <path d="M16.01 3.2c-7.02 0-12.72 5.66-12.72 12.64 0 2.23.59 4.42 1.71 6.34L3.2 28.8l6.8-1.78a12.8 12.8 0 0 0 6.01 1.51c7.02 0 12.72-5.66 12.72-12.64S23.03 3.2 16.01 3.2zm0 22.98c-1.9 0-3.75-.51-5.37-1.48l-.39-.23-4.03 1.06 1.08-3.91-.25-.4a10.18 10.18 0 0 1-1.58-5.38c0-5.68 4.73-10.3 10.54-10.3s10.54 4.62 10.54 10.3-4.73 10.34-10.54 10.34zm5.78-7.74c-.32-.16-1.87-.92-2.16-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.88-1.77-2.2-.18-.32-.02-.49.14-.65.14-.14.32-.37.47-.55.16-.18.21-.32.32-.53.11-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.35-.25-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.32-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.23 3.39 5.4 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.87-.76 2.13-1.5.26-.74.26-1.37.18-1.5-.08-.13-.29-.21-.61-.37z"/>
+                    </svg>
+                </a>
             </div>
         </header>
         
         <div class="content">
-            <section id="portfolio">
-                <h2>Portfolio</h2>
-                <div class="portfolio-container">
-                    <div class="tree-view" id="portfolioTree"></div>
-                    <div class="content-frame-container" id="contentFrame">
-                        <div class="frame-header">
-                            <span class="frame-title" id="frameTitle">Select a file to view</span>
-                            <button class="frame-close" onclick="closeFrame()">✕ CLOSE</button>
-                        </div>
-                        <iframe class="content-frame" id="contentIframe" src=""></iframe>
-                    </div>
-                </div>
-            </section>
-
             <!-- ENGLISH -->
             <div class="lang-content" data-lang="en">
                 <section id="about">
@@ -68,7 +57,7 @@
                     <div class="experience-item">
                         <div class="experience-header">
                             <span class="company">PuntoExe Consultores</span>
-                            <span class="period">[2015 - 2025]</span>
+                            <span class="period">[2015 - 2026]</span>
                         </div>
                         <div class="location">Montevideo / Remote</div>
                         <p class="description">
@@ -193,8 +182,8 @@
                     <div class="aboutme_section">
                         <span>Lo que ofrezco:</span>
                         <ul>
-                            <li>Más de 26 años de experiencia en programación (desde 1999)</li>
-                            <li>Más de 24 años de experiencia dedicada a GeneXus (desde 2001)</li>
+                            <li>Más de 27 años de experiencia en programación (desde 1999)</li>
+                            <li>Más de  25 años de experiencia dedicada a GeneXus (desde 2001)</li>
                             <li>Profundo conocimiento en arquitectura de sistemas empresariales</li>
                             <li>Especialista en sistemas de facturación electrónica e integraciones fiscales</li>
                             <li>Experiencia en desarrollo SaaS con arquitecturas modernas en la nube</li>
@@ -214,7 +203,7 @@
                     <div class="experience-item">
                         <div class="experience-header">
                             <span class="company">PuntoExe Consultores</span>
-                            <span class="period">[2015 - 2025]</span>
+                            <span class="period">[2015 - 2026]</span>
                         </div>
                         <div class="location">Montevideo / Remoto</div>
                         <p class="description">
@@ -328,7 +317,7 @@
                     <div class="experience-item">
                         <div class="experience-header">
                             <span class="company">PuntoExe Consultores</span>
-                            <span class="period">[2015 - 2025]</span>
+                            <span class="period">[2015 - 2026]</span>
                         </div>
                         <div class="location">Montevidéu / Remoto</div>
                         <p class="description">
@@ -421,10 +410,24 @@
                     </div>
                 </section>
             </div>
+
+            <section id="portfolio">
+                <h2>PORTFOLIO</h2>
+                <div class="portfolio-container">
+                    <div class="tree-view" id="portfolioTree"></div>
+                    <div class="content-frame-container" id="contentFrame">
+                        <div class="frame-header">
+                            <span class="frame-title" id="frameTitle">Select a file to view</span>
+                            <button class="frame-close" onclick="closeFrame()">✕ CLOSE</button>
+                        </div>
+                        <iframe class="content-frame" id="contentIframe" src=""></iframe>
+                    </div>
+                </div>
+            </section>
         </div>
         
         <footer>
-            <p>&copy; 2025 MARCELO GIAZZON // ALL RIGHTS RESERVED</p>
+            <p>&copy; 2026 MARCELO GIAZZON</p>
         </footer>
 
         <!-- Mobile Simulation Overlay (The 'Popup' Mode) -->
@@ -450,5 +453,4 @@
         </div>
     </div>
 </body>
-
 </html>
